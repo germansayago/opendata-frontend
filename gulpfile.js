@@ -65,6 +65,7 @@ gulp.task('useref', function(){
     .pipe(gulp.dest(dist))
 });
 
+// clean dist
 gulp.task('clean:dist', function() {
   return del.sync('dist');
 })
