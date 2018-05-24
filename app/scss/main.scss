@@ -1,10 +1,8 @@
-$color-primary: #eee;
+// lib bootstrap 4.1.1
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-body{
-  background-color: $color-primary;
-  color: darken($color-primary, 70%)
-}
+// variables
 
-.m-text {
-    border: solid 2px green;
-}
+
+// theme
+@import "components/base";
