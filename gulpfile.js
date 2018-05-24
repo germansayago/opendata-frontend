@@ -41,7 +41,7 @@ gulp.task('nunjucks', function() {
     .pipe(nunjucksRender({
       path: [src + '/templates/']
     }))
-    .pipe(gulp.dest('src'))
+    .pipe(gulp.dest(src))
     .pipe(browserSync.reload({
       stream: true
     }));
