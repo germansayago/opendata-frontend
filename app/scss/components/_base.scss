@@ -1,10 +1,10 @@
-$color-primary: #eee;
-
-body{
-  background-color: $color-primary;
-  color: darken($color-primary, 70%)
+html{
+  position: relative;
+  min-height: 100%;
 }
 
-.m-text {
-    border: solid 2px green;
+body{
+  background-color: $gray-100;
+  color: darken($gray-100, 70%);
+  margin-bottom: 60px;
 }

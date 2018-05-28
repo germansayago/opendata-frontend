@@ -1,0 +1,24 @@
+//
+//
+
+.themes{
+
+  &.themes-home{
+    padding: 50px 0;
+
+    a{
+      text-decoration: none;
+      &:hover{
+      }
+      .card{
+        margin-bottom: 20px;
+        text-align: center;
+        .card-img-top{
+          //background-color: orange;
+          padding-top: 10px;
+        }
+      }
+    }
+
+  }
+}

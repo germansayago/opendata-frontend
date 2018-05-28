@@ -1,0 +1,23 @@
+//
+// Masterhead
+
+.masterhead{
+  background-color: darken($grc-green, 0%);
+  color: white;
+  padding: 30px 0;
+
+  &.masterhead-home{
+    // height: 200px;
+    .masterhead-splash{
+      //background-color: orange;
+    }
+    .masterhead-charts{
+      //background-color: green;
+      text-align: right;
+    }
+  }
+  &.masterhead-dataset{
+    height: 100px;
+  }
+
+}

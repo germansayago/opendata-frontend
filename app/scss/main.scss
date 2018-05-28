@@ -1,8 +1,12 @@
 // lib bootstrap 4.1.1
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-
-// variables
+// @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/bootstrap";
 
 
 // theme
 @import "components/base";
+@import "components/navbar";
+@import "components/footer";
+@import "components/masterhead";
+@import "components/themes";
+@import "components/datasets";

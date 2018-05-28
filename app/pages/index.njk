@@ -2,11 +2,56 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<div class="masterhead masterhead-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 masterhead-splash">
+        <h1>Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <hr>
+        <form class="" action="" method="post">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fas fa-fw fa-lg fa-search"></i> </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Que estás buscando?">
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-md-4 masterhead-charts">
+        <div class="row">
+          <div class="col-6 col-md-12">
+            <h1 class="display-4">560</h1>
+            <p>Conjunto de Datos</p>
+          </div>
+          <div class="col-6 col-md-12">
+            <h1 class="display-4">17</h1>
+            <p>Organizaciones</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<section class="themes themes-home">
+  <div class="container">
+    <div class="row">
+      {% for i in range(0, 8) -%}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#" >
+          <div class="card">
+            <div class="card-img-top">
+              <i class="fas fa-fw fa-3x fa-home card-img-top"></i>
+            </div>
+            <div class="card-body">
+               Telecomunicaciones e Innovación
+            </div>
+          </div>
+        </a>
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
 {% endblock %}
