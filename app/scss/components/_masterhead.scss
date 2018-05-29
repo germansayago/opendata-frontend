@@ -2,22 +2,71 @@
 // Masterhead
 
 .masterhead{
-  background-color: darken($grc-green, 0%);
+  background-color: darken($info, 0%);
   color: white;
   padding: 30px 0;
 
   &.masterhead-home{
-    // height: 200px;
+    background-color: darken($grc-green, 0%);
+
     .masterhead-splash{
-      //background-color: orange;
+
+      .masterhead-form{
+        margin-top: 30px;
+        .input-group{
+          .input-group-prepend{
+            .input-group-text{
+              background-color: rgba(black, 0.1);
+              border: none;
+              border-radius: 0px;
+              .fas{
+                color: rgba(white, 0.6);
+              }
+            }
+          }
+          .form-control{
+            background-color: rgba(black, 0.1);
+            color: white;
+            border: none;
+            border-radius: 0px;
+
+            &::placeholder {
+              color: rgba(white, 0.6);
+            }
+          }
+        }
+      }
+
     }
     .masterhead-charts{
-      //background-color: green;
       text-align: right;
+      .display-4{
+        font-weight: 600;
+      }
     }
   }
   &.masterhead-dataset{
     height: 100px;
   }
 
+}
+
+@media (max-width: 767px){
+  .masterhead{
+    &.masterhead-home{
+
+      .masterhead-splash{
+
+      }
+      .masterhead-charts{
+        margin-top: 30px;
+        text-align: center;
+        display: none;
+      }
+    }
+    &.masterhead-dataset{
+      height: 100px;
+    }
+
+  }
 }

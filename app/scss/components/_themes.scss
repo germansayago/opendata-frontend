@@ -5,20 +5,55 @@
 
   &.themes-home{
     padding: 50px 0;
+    margin-bottom: 100px;
+
+    h4{
+      margin-bottom: 30px;
+    }
 
     a{
       text-decoration: none;
-      &:hover{
-      }
-      .card{
+      color: $primary;
+
+      .card-button{
+        padding: 10px;
         margin-bottom: 20px;
-        text-align: center;
-        .card-img-top{
-          //background-color: orange;
-          padding-top: 10px;
+        border-color: rgba($primary, 0.3);
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .card-icon{
+          margin-right: 10px;
+        }
+        .card-text{
+          font-size: 0.9em;
+          line-height: 1.1em;
+        }
+
+        &:hover{
+          background-color: $primary;
+          border-color: rgba($primary, 0.3);
+          color: white;
         }
       }
     }
+  }
+}
 
+
+@media (max-width: 767px){
+  .themes{
+
+    &.themes-home{
+      padding: 50px 0;
+      margin-bottom: 100px;
+
+      a{
+        .card-button{
+          margin-bottom: 10px;
+        }
+      }
+    }
   }
 }

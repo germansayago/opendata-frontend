@@ -8,3 +8,9 @@ body{
   color: darken($gray-100, 70%);
   margin-bottom: 60px;
 }
+
+@media (max-width: 767px){
+  body{
+    margin-bottom: 200px;
+  }
+}
