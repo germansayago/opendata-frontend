@@ -5,9 +5,23 @@
   background-color: darken($info, 0%);
   color: white;
   padding: 30px 0;
+  position: relative;
 
   &.masterhead-home{
     background-color: darken($grc-green, 0%);
+
+    background: linear-gradient(-45deg,#2e5043, #183246, #2e5043, #4d7a3f, #62983c);
+  	background-size: 1000% 1000%;
+  	-webkit-animation: Gradient 30s ease infinite;
+  	-moz-animation: Gradient 30s ease infinite;
+  	animation: Gradient 30s ease infinite;
+
+    .parent{
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+    }
 
     .masterhead-splash{
 
@@ -38,10 +52,14 @@
       }
 
     }
-    .masterhead-charts{
+    .masterhead-data{
       text-align: right;
-      .display-4{
-        font-weight: 600;
+      .count{
+        font-size: 5em;
+        line-height: 1em;
+      }
+      p{
+        margin: 0px;
       }
     }
   }
@@ -51,16 +69,58 @@
 
 }
 
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
 @media (max-width: 767px){
   .masterhead{
     &.masterhead-home{
 
+      .parent{
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.2;
+      }
+
       .masterhead-splash{
 
       }
-      .masterhead-charts{
-        margin-top: 30px;
-        text-align: center;
+      .masterhead-data{
         display: none;
       }
     }

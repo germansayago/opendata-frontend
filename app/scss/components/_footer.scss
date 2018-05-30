@@ -11,10 +11,30 @@ footer{
   color: white;
   padding: 20px 0px;
   font-size: 0.8em;
+
+  .footer-brand{}
+
+  .footer-by{
+    text-align: right;
+    color: $gray-500;
+    line-height: 1.2em;
+  }
+
 }
 
 @media (max-width: 767px){
   footer{
-    height: 200px;
+    height: 150px;
+    text-align: center;
+    .footer-brand{
+      margin-bottom: 20px;
+      img{
+        height: 40px;
+      }
+    }
+    .footer-by{
+      text-align: inherit;
+      font-size: 0.9em;
+    }
   }
 }

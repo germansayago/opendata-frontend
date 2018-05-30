@@ -6,11 +6,11 @@ html{
 body{
   background-color: $gray-100;
   color: darken($gray-100, 70%);
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
 }
 
 @media (max-width: 767px){
   body{
-    margin-bottom: 200px;
+    margin-bottom: 120px;
   }
 }
