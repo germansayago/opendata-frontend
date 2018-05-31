@@ -6330,43 +6330,39 @@ footer {
   background-color: #17a2b8;
   color: white;
   padding: 30px 0;
-  position: relative; }
-  .masterhead.masterhead-home {
-    background-color: #66983a;
-    background: linear-gradient(-45deg, #2e5043, #183246, #2e5043, #4d7a3f, #62983c);
-    background-size: 1000% 1000%;
-    -webkit-animation: Gradient 30s ease infinite;
-    -moz-animation: Gradient 30s ease infinite;
-    animation: Gradient 30s ease infinite; }
-    .masterhead.masterhead-home .parent {
-      position: absolute;
-      top: 0px;
-      width: 100%;
-      height: 100%; }
-    .masterhead.masterhead-home .masterhead-splash .masterhead-form {
-      margin-top: 30px; }
-      .masterhead.masterhead-home .masterhead-splash .masterhead-form .input-group .input-group-prepend .input-group-text {
-        background-color: rgba(0, 0, 0, 0.1);
-        border: none;
-        border-radius: 0px; }
-        .masterhead.masterhead-home .masterhead-splash .masterhead-form .input-group .input-group-prepend .input-group-text .fas {
-          color: rgba(255, 255, 255, 0.6); }
-      .masterhead.masterhead-home .masterhead-splash .masterhead-form .input-group .form-control {
-        background-color: rgba(0, 0, 0, 0.1);
-        color: white;
-        border: none;
-        border-radius: 0px; }
-        .masterhead.masterhead-home .masterhead-splash .masterhead-form .input-group .form-control::placeholder {
-          color: rgba(255, 255, 255, 0.6); }
-    .masterhead.masterhead-home .masterhead-data {
-      text-align: right; }
-      .masterhead.masterhead-home .masterhead-data .count {
-        font-size: 5em;
-        line-height: 1em; }
-      .masterhead.masterhead-home .masterhead-data p {
-        margin: 0px; }
+  position: relative;
+  background-color: #66983a;
+  background: linear-gradient(-45deg, #2e5043, #183246, #2e5043, #4d7a3f, #62983c);
+  background-size: 1000% 1000%;
+  -webkit-animation: Gradient 30s ease infinite;
+  -moz-animation: Gradient 30s ease infinite;
+  animation: Gradient 30s ease infinite; }
+  .masterhead .masterhead-splash .masterhead-form {
+    margin-top: 30px; }
+    .masterhead .masterhead-splash .masterhead-form .input-group .input-group-prepend .input-group-text {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 0px; }
+      .masterhead .masterhead-splash .masterhead-form .input-group .input-group-prepend .input-group-text .fas {
+        color: rgba(255, 255, 255, 0.6); }
+    .masterhead .masterhead-splash .masterhead-form .input-group .form-control {
+      background-color: rgba(0, 0, 0, 0.1);
+      color: white;
+      border: none;
+      border-radius: 0px; }
+      .masterhead .masterhead-splash .masterhead-form .input-group .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.6); }
+  .masterhead .masterhead-data {
+    text-align: right;
+    padding-right: 50px; }
+    .masterhead .masterhead-data .count {
+      font-size: 5em;
+      line-height: 1em; }
+    .masterhead .masterhead-data p {
+      margin: 0px; }
   .masterhead.masterhead-dataset {
-    height: 100px; }
+    height: 100px;
+    background-color: orange; }
 
 @-webkit-keyframes Gradient {
   0% {
@@ -6393,16 +6389,15 @@ footer {
     background-position: 0% 50%; } }
 
 @media (max-width: 767px) {
-  .masterhead.masterhead-home .parent {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2; }
-  .masterhead.masterhead-home .masterhead-data {
-    display: none; }
-  .masterhead.masterhead-dataset {
-    height: 100px; } }
+  .masterhead {
+    text-align: center; }
+    .masterhead.masterhead-home .masterhead-data {
+      padding-right: 20px;
+      text-align: center;
+      font-size: 0.8rem;
+      margin-top: 30px; }
+    .masterhead.masterhead-dataset {
+      height: 100px; } }
 
 .themes.themes-home {
   padding: 50px 0;
@@ -6413,7 +6408,7 @@ footer {
     text-decoration: none;
     color: #183246; }
     .themes.themes-home a .card-button {
-      padding: 10px;
+      padding: 15px 10px;
       margin-bottom: 20px;
       border-color: rgba(24, 50, 70, 0.3);
       display: flex;
@@ -6423,7 +6418,8 @@ footer {
         margin-right: 10px; }
       .themes.themes-home a .card-button .card-text {
         font-size: 0.9em;
-        line-height: 1.1em; }
+        line-height: 1.1em;
+        font-weight: 600; }
       .themes.themes-home a .card-button:hover {
         background-color: #183246;
         border-color: rgba(24, 50, 70, 0.3);

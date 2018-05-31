@@ -1,0 +1,68 @@
+<!-- index.njk -->
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="masterhead masterhead-home">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-md-8 masterhead-splash ">
+        <h1>Datasets</h1>
+        <form class="masterhead-form">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fas fa-fw fa-lg fa-search"></i> </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Que estás buscando?">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-12 col-md-4 masterhead-data parent">
+        <div class="count">67</div>
+        <p>Conjunto de Datos</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<section class="themes themes-home">
+  <div class="container">
+
+    <h4>Conjuntos de Datos</h4>
+
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="accordion">
+          {% for i in range(1,4) %}
+          <div class="card">
+            <div class="card-header" id="heading{{ i }}">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="true" aria-controls="collapse{{ i }}">
+                  Collapsible Group Item #{{ i }}
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapse{{ i }}" class="collapse {% if i == 1 %}show{% endif %}" aria-labelledby="heading{{ i }}" data-parent="#accordionExample">
+              <ul class="list-group list-group-flush">
+               <li class="list-group-item">Cras justo odio</li>
+               <li class="list-group-item">Dapibus ac facilisis in</li>
+               <li class="list-group-item">Vestibulum at eros</li>
+             </ul>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        lista
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
+
+{% block js %}{% endblock %}

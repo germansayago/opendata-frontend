@@ -5,65 +5,292 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Admin Frontend v.1.0.0</title>
-  <base href="/">
+  <title>Datos Abierto v.1.0.0</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
   <!-- src/templates/partials/navigation.njk -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">DATOS ABIERTO</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-expand-lg navbar-light bg-light gg-navbar">
+  <div class="container">
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <a class="navbar-brand navbar-logo" href="./">
+      <img src="images/datos-abierto-logo.svg" alt="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Datasets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Organizaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Temas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="test.html">Test</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 
+
+<div class="masterhead masterhead-home">
+  <div class="parent"> </div>
   <div class="container">
-    
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="row">
+
+      <div class="col-12 col-md-8 masterhead-splash ">
+        <h1>Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <form class="masterhead-form">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <i class="fas fa-fw fa-lg fa-search"></i> </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Que estás buscando?">
+          </div>
+        </form>
+      </div>
+
+      <div class="col-12 col-md-4 masterhead-data">
+        <div class="row">
+          <div class="col-6 col-md-12 mb-3">
+            <div class="count">173</div>
+            <p>Recursos Disponibles</p>
+          </div>
+          <div class="col-6 col-md-12">
+            <div class="count">32</div>
+            <p>Conjunto de Datos</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
+<section class="themes themes-home">
+  <div class="container">
+
+    <h4>Categorías</h4>
+
+    <div class="row">
+
+
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-coins  fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Economía y Finanzas
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-user-graduate fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Educación
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-leaf   fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Ambiente y Agua
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-university  fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Gobierno
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-user-md fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Salud
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-bicycle fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Recreación
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-shield-alt  fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Seguridad
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-piggy-bank fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Desarrollo Social y Económico
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-code-branch fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Tecnología e Innovación
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-bus fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Transporte
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-home fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Obras y Servicios Públicos
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="#">
+          <div class="card card-button">
+            <div class="card-icon">
+              <i class="fas fa-users fa-fw fa-2x card-img-top"></i>
+            </div>
+            <div class="card-text">
+              Participación Ciudadana
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
 
   </div>
+</section>
 
-  <script src="./js/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+  <footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-2 footer-brand">
+				<a href="http://www.riocuarto.gov.ar/" target="_blank"><img src="images/gobierno-rio-cuarto-logo.svg" alt="" class="img-fluid"></a>
+			</div>
+			<div class="col-xs-12 col-md-10 footer-by">
+				Desarrollado por la Sec. Gobierno Abierto y Modernización <br>
+				Gobierno de Río Cuarto
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</footer>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="js/main.min.js"></script>
-
 
 </body>
 </html>
