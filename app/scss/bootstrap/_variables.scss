@@ -70,6 +70,7 @@ $colors: map-merge((
 
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
+$terceary:      $grc-green !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -81,6 +82,7 @@ $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
+  "terceary":   $terceary,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
@@ -214,7 +216,7 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               0rem !default; // .25
+$border-radius:               0.25rem !default; // .25
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 

@@ -27,25 +27,21 @@
   </div>
 </div>
 
-<section class="themes themes-home">
+<section class="dataset">
   <div class="container">
 
-    <h4>Conjuntos de Datos</h4>
-
     <div class="row">
-      <div class="col-12 col-md-3">
-        <div class="accordion">
+      <div class="col-12 col-md-3 mb-5 sidebar">
+
+        <div class="accordion" id="accordionMenu">
           {% for i in range(1,4) %}
           <div class="card">
-            <div class="card-header" id="heading{{ i }}">
-              <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="true" aria-controls="collapse{{ i }}">
-                  Collapsible Group Item #{{ i }}
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapse{{ i }}" class="collapse {% if i == 1 %}show{% endif %}" aria-labelledby="heading{{ i }}" data-parent="#accordionExample">
+            <a href="#" data-toggle="collapse" data-target="#collapse{{ i }}" aria-expanded="true" aria-controls="collapse{{ i }}" data-parent="#accordionMenu" class="bg-light text-dark" >
+              <div class="card-header" id="heading{{ i }}">
+                Item #{{ i }}
+              </div>
+            </a>
+            <div id="collapse{{ i }}" class="collapse {% if i == 1 %}show{% endif %}" aria-labelledby="heading{{ i }}" data-parent="#accordionMenu">
               <ul class="list-group list-group-flush">
                <li class="list-group-item">Cras justo odio</li>
                <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -56,8 +52,62 @@
           {% endfor %}
         </div>
       </div>
-      <div class="col-12 col-md-9">
-        lista
+      <div class="col-12 col-md-9 content">
+
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 col-md-4 order-sm-last">
+            <form class="" action="index.html" method="post">
+              <div class="form-group">
+                <select name="" class="form-control">
+                  <option value="">Ultimas actualizaciones</option>
+                  <option value="">Ascendente A-Z</option>
+                  <option value="">Descendente Z-A</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-sm">
+              <h3>Titulo de la categoría</h3>
+          </div>
+        </div>
+
+        {% for item in range(1,6) %}
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
       </div>
     </div>
 

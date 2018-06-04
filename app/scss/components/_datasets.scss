@@ -2,8 +2,29 @@
 //
 
 .dataset{
+  padding: 50px 0;
+  margin-bottom: 50px;
 
-  .theme-home{
-
+  .sidebar{
+    // background-color: orange;
   }
+
+  .content{
+    // background-color: red;
+
+    .card{
+      a{
+        color: $gray-900;
+        text-decoration: none;
+        .card-body{
+          //background-color: blue;
+
+          &:hover{
+            background-color: $gray-100;
+          }
+        }
+      }
+    }
+  }
+
 }

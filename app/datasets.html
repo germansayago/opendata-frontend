@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Datos Abierto v.1.0.0</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
   <!--build:css css/main.min.css -->
   <link rel="stylesheet" href="css/app.css">
   <!-- endbuild -->
@@ -69,25 +69,21 @@
   </div>
 </div>
 
-<section class="themes themes-home">
+<section class="dataset">
   <div class="container">
 
-    <h4>Conjuntos de Datos</h4>
-
     <div class="row">
-      <div class="col-12 col-md-3">
-        <div class="accordion">
+      <div class="col-12 col-md-3 mb-5 sidebar">
+
+        <div class="accordion" id="accordionMenu">
           
           <div class="card">
-            <div class="card-header" id="heading1">
-              <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                  Collapsible Group Item #1
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+            <a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1" data-parent="#accordionMenu" class="bg-light text-dark" >
+              <div class="card-header" id="heading1">
+                Item #1
+              </div>
+            </a>
+            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionMenu">
               <ul class="list-group list-group-flush">
                <li class="list-group-item">Cras justo odio</li>
                <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -97,15 +93,12 @@
           </div>
           
           <div class="card">
-            <div class="card-header" id="heading2">
-              <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
-                  Collapsible Group Item #2
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionExample">
+            <a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2" data-parent="#accordionMenu" class="bg-light text-dark" >
+              <div class="card-header" id="heading2">
+                Item #2
+              </div>
+            </a>
+            <div id="collapse2" class="collapse " aria-labelledby="heading2" data-parent="#accordionMenu">
               <ul class="list-group list-group-flush">
                <li class="list-group-item">Cras justo odio</li>
                <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -115,15 +108,12 @@
           </div>
           
           <div class="card">
-            <div class="card-header" id="heading3">
-              <h5 class="mb-0">
-                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                  Collapsible Group Item #3
-                </button>
-              </h5>
-            </div>
-
-            <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionExample">
+            <a href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3" data-parent="#accordionMenu" class="bg-light text-dark" >
+              <div class="card-header" id="heading3">
+                Item #3
+              </div>
+            </a>
+            <div id="collapse3" class="collapse " aria-labelledby="heading3" data-parent="#accordionMenu">
               <ul class="list-group list-group-flush">
                <li class="list-group-item">Cras justo odio</li>
                <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -134,8 +124,202 @@
           
         </div>
       </div>
-      <div class="col-12 col-md-9">
-        lista
+      <div class="col-12 col-md-9 content">
+
+        <div class="row mb-3">
+          <div class="col-12 col-sm-6 col-md-4 order-sm-last">
+            <form class="" action="index.html" method="post">
+              <div class="form-group">
+                <select name="" class="form-control">
+                  <option value="">Ultimas actualizaciones</option>
+                  <option value="">Ascendente A-Z</option>
+                  <option value="">Descendente Z-A</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-sm">
+              <h3>Titulo de la categoría</h3>
+          </div>
+        </div>
+
+        
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-3">
+          <a href="recursos.html">
+            <div class="card-body">
+              <h4 class="card-title mb-1">
+                  Titulo del dataset
+              </h4>
+              <div class="text-secondary mb-2">Lorem ipsum dolor sit amet / Lorem ipsum dolor / Lorem ipsum dolor</div>
+              <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </a>
+          <div class="card-footer">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" title="Economía y Finanzas">
+                  <i class="fas fa-fw fa-lg fa-coins text-muted"></i>
+                </a>
+                <a href="#" title="Tecnología e Innovación">
+                  <i class="fas fa-fw fa-lg fa-code-branch text-muted"></i>
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right text-uppercase">
+                <span class="badge badge-success" title="csv">csv</span>
+                <span class="badge badge-success" title="excel">excel</span>
+                <span class="badge badge-danger" title="pdf">pdf</span>
+                <span class="badge badge-primary" title="word">word</span>
+                <span class="badge badge-info" title="kml">kml</span>
+                <span class="badge badge-info" title="gml">gml</span>
+                <span class="badge badge-dark" title="json">json</span>
+                <span class="badge badge-dark" title="api">api</span>
+                <span class="badge badge-warning" title="gml">otro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
       </div>
     </div>
 
@@ -159,9 +343,10 @@
 </footer>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <!--build:js js/main.min.js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
   <script src="js/app.js"></script>
   <!-- endbuild -->
 
