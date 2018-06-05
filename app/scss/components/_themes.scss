@@ -13,12 +13,12 @@
 
     a{
       text-decoration: none;
-      color: $primary;
+      color: $blue-gob;
 
       .card-button{
         padding: 15px 10px;
         margin-bottom: 20px;
-        border-color: rgba($primary, 0.3);
+        border-color: rgba($blue-gob, 0.3);
 
         display: flex;
         flex-direction: row;
@@ -27,16 +27,16 @@
           margin-right: 10px;
         }
         .card-text{
-          font-size: 0.9em;
+          font-size: 0.8em;
           line-height: 1.1em;
-          // font-size: 0.8em;
-          font-weight: 600;
-          // text-transform: uppercase;
+          //font-weight: 600;
+          font-family: $font-family-serif;
+          text-transform: uppercase;
         }
 
         &:hover{
-          background-color: $primary;
-          border-color: rgba($primary, 0.3);
+          background-color: $blue-gob;
+          border-color: rgba($blue-gob, 0.3);
           color: white;
         }
       }

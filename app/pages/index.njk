@@ -23,12 +23,12 @@
       <div class="col-12 col-md-4 masterhead-data parent">
         <div class="row">
           <div class="col-6 col-md-12 mb-3">
-            <div class="count">173</div>
-            <p>Recursos Disponibles</p>
+            <div class="count">32</div>
+            <p>Conjunto de Datos</p>          
           </div>
           <div class="col-6 col-md-12">
-            <div class="count">32</div>
-            <p>Conjunto de Datos</p>
+            <div class="count">173</div>
+            <p>Recursos Disponibles</p>
           </div>
         </div>
       </div>
@@ -42,39 +42,42 @@
 
     <h4>Categorías</h4>
 
-    <div class="row">
+    <div class="pb-5">
+      <div class="row">
 
-      {% macro field(category, icon='', text='') %}
+        {% macro field(category, icon='', text='') %}
 
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <a href="datasets.html">
-          <div class="card card-button">
-            <div class="card-icon">
-              <i class="{{ icon }} fa-fw fa-2x card-img-top"></i>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <a href="datasets.html">
+            <div class="card card-button">
+              <div class="card-icon">
+                <i class="{{ icon }} fa-fw fa-2x card-img-top"></i>
+              </div>
+              <div class="card-text">
+                {{ text }}
+              </div>
             </div>
-            <div class="card-text">
-              {{ text }}
-            </div>
-          </div>
-        </a>
+          </a>
+        </div>
+        {% endmacro %}
+
+        {{ field('1', icon='fas fa-coins ', text='Economía y Finanzas') }}
+        {{ field('2', icon='fas fa-user-graduate', text='Educación') }}
+        {{ field('3', icon='fas fa-leaf  ', text='Ambiente y Agua') }}
+        {{ field('4', icon='fas fa-university ', text='Gobierno') }}
+        {{ field('5', icon='fas fa-user-md', text='Salud') }}
+        {{ field('6', icon='fas fa-bicycle', text='Recreación') }}
+        {{ field('7', icon='fas fa-shield-alt ', text='Seguridad') }}
+        {{ field('8', icon='fas fa-piggy-bank', text='Desarrollo Social y Económico') }}
+        {{ field('9', icon='fas fa-code-branch', text='Tecnología e Innovación') }}
+        {{ field('10', icon='fas fa-bus', text='Transporte') }}
+        {{ field('11', icon='fas fa-home', text='Obras y Servicios Públicos') }}
+        {{ field('12', icon='fas fa-users', text='Participación Ciudadana') }}
       </div>
-      {% endmacro %}
-
-      {{ field('1', icon='fas fa-coins ', text='Economía y Finanzas') }}
-      {{ field('2', icon='fas fa-user-graduate', text='Educación') }}
-      {{ field('3', icon='fas fa-leaf  ', text='Ambiente y Agua') }}
-      {{ field('4', icon='fas fa-university ', text='Gobierno') }}
-      {{ field('5', icon='fas fa-user-md', text='Salud') }}
-      {{ field('6', icon='fas fa-bicycle', text='Recreación') }}
-      {{ field('7', icon='fas fa-shield-alt ', text='Seguridad') }}
-      {{ field('8', icon='fas fa-piggy-bank', text='Desarrollo Social y Económico') }}
-      {{ field('9', icon='fas fa-code-branch', text='Tecnología e Innovación') }}
-      {{ field('10', icon='fas fa-bus', text='Transporte') }}
-      {{ field('11', icon='fas fa-home', text='Obras y Servicios Públicos') }}
-      {{ field('12', icon='fas fa-users', text='Participación Ciudadana') }}
     </div>
 
   </div>
+
 </section>
 {% endblock %}
 

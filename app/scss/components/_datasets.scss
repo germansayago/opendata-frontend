@@ -2,7 +2,7 @@
 //
 
 .dataset{
-  padding: 50px 0;
+  padding: 30px 0;
   margin-bottom: 50px;
 
   .sidebar{
@@ -17,12 +17,21 @@
         color: $gray-900;
         text-decoration: none;
         .card-body{
-          //background-color: blue;
+
+          .card-title{
+            color: darken($green-gob, 10%);
+          }
 
           &:hover{
-            background-color: $gray-100;
+            background-color: rgba($green-gob, 0.15);
+            .card-title{
+              color: darken($green-gob, 20%);
+            }
           }
         }
+      }
+      &:hover{
+        border-color: rgba($green-gob, 0.4);
       }
     }
   }

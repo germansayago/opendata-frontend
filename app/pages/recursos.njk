@@ -27,11 +27,115 @@
   </div>
 </div>
 
-<section class="themes themes-home">
+<section class="recursos">
   <div class="container">
 
-    <h4>Recursos</h4>
+    <div class="mb-4 pb-2">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="datasets.html">Datasets</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Recursos</li>
+        </ol>
+      </nav>
+    </div>
 
+    <div class="row">
+      <div class="col-12 col-md-4 mb-5 sidebar">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Información del Conjunto de Datos</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            {% macro metadata(field='', value='') %}
+            <div class="border-top border-secondary pt-1 pb-2">
+              <small class="text-green-gob">{{ field }}</small>
+              <p class="mb-0">{{ value }}</p>
+            </div>
+            {% endmacro %}
+
+            {{ metadata(field='temas', value='Economía y Finanzar, Desarrollo Económico') }}
+            {{ metadata(field='licencia', value='Open Data Commons Open Database License (ODbL) ') }}
+            {{ metadata(field='frecuencia de actualización', value='Semestral') }}
+            {{ metadata(field='fecha de publicación', value='05/05/2018') }}
+            {{ metadata(field='fecha de actualización', value='05/05/2018') }}
+            {{ metadata(field='autor', value='Sec. de Economía') }}
+            {{ metadata(field='fuente del dato', value='GIS') }}
+            {{ metadata(field='contacto', value='mail@mail.com') }}
+
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Actualizaciones</h5>
+            {% set i = 1 %}
+            {% for i in range(1, 2) %}
+            <div class="border-top border-secondary pt-1 pb-2">
+              <small class="text-muted">05/05/2018</small>
+              <p class="mb-0">Se actualizó el conjunto de datos hace <b> {{ i }} mes{% if i > 1 %}es{% endif %}</b> </p>
+            </div>
+            {% set i = i + 1 %}
+            {% endfor %}
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Difundí el conjunto de datos</h5>
+            <div class="border-top border-secondary pt-3 pb-2">
+              <a href="#" class=""><i class="fab fa-fw fa-lg fa-facebook"></i></a>
+              <a href="#" class=""><i class="fab fa-fw fa-lg fa-twitter"></i></a>
+              <a href="#" class=""><i class="fab fa-fw fa-lg fa-instagram"></i></a>
+              <a href="#" class=""><i class="fab fa-fw fa-lg fa-whatsapp"></i></a>
+              <a href="#" class=""><i class="far fa-fw fa-lg fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-8 mb-5 content">
+        <h3>Titulo de la categoría</h3>
+        <h6 class="text-secondary">Area a la que pertenece el dataset</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div class="mt-5 mb-4">
+          <h6 class="border-bottom border-secondary pb-1">Recursos del conjunto de datos</h6>
+        </div>
+
+        {% for i in range(0,2) %}
+        <div class="card mb-3">
+
+          <div class="card-body">
+            <h5 class="card-title mb-1">
+                Titulo del recurso
+            </h5>
+            <p class="card-text text-dark visible-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="card-body">
+            <div class="row">
+              <div class="col mb-1">
+                <a href="#" class="btn btn-sm btn-blue-gob">
+                  <i class="fas fa-download"></i> Descargar
+                </a>
+                <a href="#" class="btn btn-sm btn-blue-gob">
+                  <i class="fas fa-link"></i> Consultar
+                </a>
+              </div>
+              <div class="col-sm-auto text-sm-right">
+                <span class="badge badge-success" title="csv">csv</span>
+                {% if i == 0 %}
+                  <span class="badge badge-success" title="csv">excel</span>
+                {% else %}
+                  <span class="badge badge-dark" title="csv">json</span>
+                {% endif %}
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}

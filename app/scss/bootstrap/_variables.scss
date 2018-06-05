@@ -35,12 +35,12 @@ $grays: map-merge((
 ), $grays);
 
 // institucionales
-$grc-blue:       #183246 !default;
-$grc-lightblue:  #9ec6e8 !default;
-$grc-green:      #66983a !default;
+$blue-gob:       #183246 !default;
+$lightblue-gob:  #9ec6e8 !default;
+$green-gob:      #66983a !default;
 
-// $blue:    #007bff !default;
-$blue:    $grc-blue !default;
+$blue:    #007bff !default;
+// $blue:    $grc-blue !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -70,7 +70,7 @@ $colors: map-merge((
 
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
-$terceary:      $grc-green !default;
+$terceary:      $green !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -80,7 +80,7 @@ $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
-  "primary":    $primary,
+  "primary":      $primary,
   "secondary":  $secondary,
   "terceary":   $terceary,
   "success":    $success,
@@ -88,7 +88,10 @@ $theme-colors: map-merge((
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "blue-gob":   $blue-gob,
+  "lightblue-gob":  $lightblue-gob,
+  "green-gob":      $green-gob
 ), $theme-colors);
 // stylelint-enable
 
@@ -156,7 +159,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                theme-color("primary") !default;
+$link-color:                theme-color("blue-gob") !default;
 $link-decoration:           none !default;
 $link-hover-color:          darken($link-color, 15%) !default;
 $link-hover-decoration:     underline !default;
@@ -239,7 +242,11 @@ $transition-collapse:         height .35s ease !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
+
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-serif:           "Bree Serif", serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
@@ -263,8 +270,8 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      ($spacer / 2) !default;
-$headings-font-family:        inherit !default;
-$headings-font-weight:        500 !default;
+$headings-font-family:        $font-family-serif !default;
+$headings-font-weight:        400 !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 

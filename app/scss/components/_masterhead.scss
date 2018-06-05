@@ -7,7 +7,7 @@
   padding: 30px 0;
   position: relative;
 
-  background-color: darken($grc-green, 0%);
+  background-color: darken($green-gob, 0%);
 
   background: linear-gradient(-45deg,#2e5043, #183246, #2e5043, #4d7a3f, #62983c);
   background-size: 1000% 1000%;
@@ -49,6 +49,7 @@
     text-align: right;
     padding-right: 50px;
     .count{
+      font-family: $font-family-serif;
       font-size: 5em;
       line-height: 1em;
     }
