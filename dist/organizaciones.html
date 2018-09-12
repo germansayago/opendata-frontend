@@ -11,10 +11,8 @@
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-  <!-- src/templates/partials/navigation.njk -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light gg-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light gg-navbar">
   <div class="container">
-    
     <a class="navbar-brand navbar-logo" href="./">
       <img src="images/datos-abierto-logo.svg" alt="logo">
     </a>
@@ -23,24 +21,22 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase" href="datasets.html">Datasets</a>
+        </li>
+      </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="datasets.html">Datasets</a>
+          <a class="navbar-brand navbar-logo" href="http://mapasriocuarto.gob.ar/" target="_blank">
+            <img src="images/gis-logo.svg" alt="logo">
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="organizaciones.html">Organizaciones</a>
+          <a class="navbar-brand navbar-logo" href="http://transparencia.riocuarto.gov.ar/" target="_blank">
+            <img src="images/transparencia-logo.svg" alt="logo">
+          </a>
         </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
       </ul>
     </div>
   </div>
@@ -94,15 +90,20 @@
 </section>
 
 
-  <footer>
+  
+
+<footer>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-2 footer-brand">
-				<a href="http://www.riocuarto.gov.ar/" target="_blank"><img src="images/gobierno-rio-cuarto-logo.svg" alt="" class="img-fluid"></a>
+			<div class="col-xs-12 col-md-2">
+				<a href="http://www.riocuarto.gov.ar/" target="_blank"><img src="images/gobierno-rio-cuarto-logo.svg" alt=""></a>
 			</div>
-			<div class="col-xs-12 col-md-10 footer-by">
+			<div class="col-xs-12 col-md-8 text-center">
 				Desarrollado por la Sec. Gobierno Abierto y Modernización <br>
 				Gobierno de Río Cuarto
+			</div>
+			<div class="col-xs-12 col-md-2 text-right">
+				<a href="http://www.riocuarto.gov.ar/" target="_blank"><img src="images/gob-abierto-modernizacion-logo.svg" alt=""></a>
 			</div>
 		</div>
 		<div class="clearfix"></div>

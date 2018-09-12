@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/complejocdp/frontend.git"
+    "url": "git+ssh://git@github.com:germansayago/opendata-frontend.git"
   },
   "author": "CmblueD&D",
   "license": "ISC",
